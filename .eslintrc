@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "extends": ["standard", "react-app", "prettier/react", "@react-native-community", "plugin:jest/recommended"],
+  "plugins": ["flowtype", "prettier", "react", "jest"],
+  "env": {
+    "jest/globals": true,
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "no-undef": 0,
+    "no-useless-constructor": 0,
+    "no-unused-vars": 1,
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": ["error", "never"],
+    "object-curly-spacing": ["error", "always"]
+  }
+}
