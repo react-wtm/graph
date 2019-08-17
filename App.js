@@ -25,7 +25,7 @@ const { width } = Dimensions.get("window")
 /**
  * Provider 必须在 app 入口指定，不然部分组件用不了（因为现在支持多个 Modal 以及在 Modal 上面显示 Toast）
  */
-const App = () => {
+export default class App extends React.Component {
   state = {
     width: 0,
     height: 0
@@ -58,7 +58,7 @@ const App = () => {
       }
     })
     chart.legend({
-      position: "right"
+      position: "bottom"
     })
     chart.coord("polar", {
       transposed: true,
@@ -79,14 +79,16 @@ const App = () => {
 
     chart.render()
   }
-  return (
-    <Provider>
-      <View style={styles.container}>
-        <Text>饼图</Text>
-        <Canvas ref={this.handleCanvas}></Canvas>
-      </View>
-    </Provider>
-  )
+  render() {
+    return (
+      <Provider>
+        <View style={styles.container}>
+          <Text>饼图</Text>
+          <Canvas ref={this.handleCanvas}></Canvas>
+        </View>
+      </Provider>
+    )
+  }
 }
 const styles = StyleSheet.create({
   container: {
@@ -97,4 +99,3 @@ const styles = StyleSheet.create({
   }
 })
 
-export default App
