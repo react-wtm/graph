@@ -1,3 +1,4 @@
 *.js linguist-language=react-native
 *.jsx linguist-language=react-native
 *.xcodeproj linguist-language=react-native
+*.m linguist-language=react-native
