@@ -1,4 +1,0 @@
-ios/* linguist-vendored=true
-android/* linguist-vendored=true
-*.js linguist-language=react-native
-*.jsx linguist-language=react-native
