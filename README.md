@@ -6,7 +6,7 @@ The project is base on react-native @antv/f2
 
 - root dir
 
-  `yran install`
+  `yarn install`
 
 - cd /ios
 
@@ -14,8 +14,4 @@ The project is base on react-native @antv/f2
 
 ### start
 
-    `react-native run-ios`
-
-or
-
-    `react-native run-android`
+`react-native run-ios` or `react-native run-android`

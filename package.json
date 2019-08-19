@@ -54,5 +54,7 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "author": "wutianmei",
+  "license": "MIT"
 }
